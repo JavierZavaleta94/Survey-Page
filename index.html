@@ -1,0 +1,107 @@
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Survey Form | Welcome</title>
+      <link rel="stylesheet" href="./css/style.css"
+    </head>
+
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <div id="form">
+        <p id="description">Let us know how you have been supporting <a href="https://www.nycfc.com/">New York City Football Club </a></p>
+
+        <form id="survey-form" action="sample.com" method="post">
+
+        <div>
+          <div class="left-side">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="right-side">
+            <input id="name" type="text" name="name" placeholder="Enter your name" required="">
+          </div>
+        </div>
+
+
+        <div>
+          <div class="left-side">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="right-side">
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required="">
+          </div>
+        </div>
+
+        <div>
+          <div class="left-side">
+            <label id="number-label" for="age">* Age: </label>
+          </div>
+          <div class="right-side">
+            <input id="number" type="number" name="age" min="1" max="100" placeholder="Age" required="">
+          </div>
+        </div>
+
+        <div>
+          <div class="left-side">
+            <label for="dropdown">* How long have you been a season ticket holder?</label>
+          </div>
+          <div class="right-side">
+            <select id="dropdown" name="currentPos" required="">
+              <option disabled="" value="">Select an option</option>
+              <option value="oneYear">1 year</option>
+              <option value="twoYear">2 years</option>
+              <option value="threeYear">3 years</option>
+              <option value="fourYear">4 years</option>
+              <option value="fiveYearPlus">5+ years</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <div class="left-side">
+            <label for="answerOne">* Do you go with friends to matchday games?</label>
+          </div>
+          <div class="right-side">
+            <label><input id="answerOne" name="radio-buttons" value="1" type="radio" >Yes</label>
+            <label><input id="answerOne" name="radio-buttons" value="2" type="radio">No</label>
+            <label><input id="answerOne" name="radio-buttons" value="3" type="radio">Sometimes</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="top-side">
+            <label for="answerTwo">* What do you like to eat in Matchday Games at Yankee Stadium<br>(Check all that apply):<br></label>
+          </div>
+          <div class="bottom-side">
+            <label><input id="answerTwo" name="checkbox-buttons" value="1" type="checkbox">Hot Dogs</label>
+            <label><input id="answerTwo" name="checkbox-buttons" value="2" type="checkbox">French Fries</label>
+            <label><input id="answerTwo" name="checkbox-buttons" value="3" type="checkbox">Soda</label>
+            <label><input id="answerTwo" name="checkbox-buttons" value="4" type="checkbox">Juice</label>
+            <label><input id="answerTwo" name="checkbox-buttons" value="5" type="checkbox">Chicken Bucket</label>
+          </div>
+        </div>
+
+        <div >
+          <div class="top-message">
+            <label for="comments">* How would you improve Match day experience? Please leave feedback.</label>
+          </div>
+          <div class="under-message">
+            <textarea id="comments"  name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+
+        <div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+
+        </form>
+      </div>
+
+
+    </body>
+
+  </html>
